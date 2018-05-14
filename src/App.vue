@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <h1>Electric Lit Generators</h1>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Home from './pages/home'
+import Generator from './pages/generator'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Home,
+    Generator
+  }
 }
 </script>
 
