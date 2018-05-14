@@ -15,7 +15,7 @@
       </div>
       <div class="result">
         <h2 v-show="active">She had {{description[0]}} like a {{description[1]}} {{description[2]}} and I
-        {{description[3]}} to her {{description[4]}}</h2>
+        {{description[3]}} to {{description[4]}} her.</h2>
       </div>
     </div>
 </template>
@@ -29,6 +29,7 @@ export default Vue.component(name, {
     return {
       title: 'Male Author Description Generator',
       msg: 'Waiting for a name...',
+      name: '',
       description: [],
       active: false,
       alphabet: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -45,7 +46,7 @@ export default Vue.component(name, {
   methods: {
     // method to generate the elevator pitch
     generate: function () {
-      this.pitch = []
+      this.description = []
       this.active = false
       // check that input is correct length
       if (this.name.length !== 5) {
@@ -57,7 +58,7 @@ export default Vue.component(name, {
         for (let i = 0; i < this.name.length; i++) {
           let letter = this.name.charAt(i)
           let letterIndex = this.alphabet.indexOf(letter.toUpperCase())
-          this.pitch.push(maleAuthorDict[i][letterIndex])
+          this.description.push(maleAuthorDict[i][letterIndex])
         }
         // display message to user
         this.msg = 'Generated.'
