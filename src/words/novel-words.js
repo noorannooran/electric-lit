@@ -1,15 +1,15 @@
 // Arrays holding the values  A to G columns
 // A column
-const adjectives = ['edge-of-your-seat', 'keenly observed', 'lyrical', 'profound', 'erotic', 'inspiring', 'razor-sharp', 'heartrending', 'dream-like', 'darly comic', 'uncompromising', 'courageous', 'compulsively readable', 'unflinching', 'fiercely honest', 'richly drawn', 'unforgettable', 'riveting', 'high-voltage', '' +
+const adj1 = ['edge-of-your-seat', 'keenly observed', 'lyrical', 'profound', 'erotic', 'inspiring', 'razor-sharp', 'heartrending', 'dream-like', 'darly comic', 'uncompromising', 'courageous', 'compulsively readable', 'unflinching', 'fiercely honest', 'richly drawn', 'unforgettable', 'riveting', 'high-voltage', '' +
 'psycho-sexual', 'riotously funny', 'passionate', 'surreal', 'dystopian', 'hysterical', 'meditative']
 // B column
 const genres = ['thriller', 'meditation', 'coming of age story', 'family drama', 'war epic', 'episotolary novel', 'romance', 'tragedy', 'story', 'tour de force', 'comedy', 'noir',
   'instant classic', 'fairy tale', 'autobiographical novel', 'romp', 'fictional memoir', 'trilogy', 'detective novel', 'page-turner', 'tragicomedy', 'murder mystery', 'novel in stories', 'historical novel', 'graphic novel', 'saga']
 // C column
-const protagonistAdjs = ['depressed', 'wealthy', 'doomed', 'exuberant', 'agoraphobic', 'maladjusted', 'misanthropic', 'alcoholic', 'young', 'philosophical', 'hopelessly romantic', 'hyper-sexual', 'precocious', 'unlucky',
+const adj2 = ['depressed', 'wealthy', 'doomed', 'exuberant', 'agoraphobic', 'maladjusted', 'misanthropic', 'alcoholic', 'young', 'philosophical', 'hopelessly romantic', 'hyper-sexual', 'precocious', 'unlucky',
   'quixotic', 'desperate', 'refugee', 'dissatisfied', 'bored', 'morally compromised', 'lovesick', 'drug-addled', 'jilted', 'vengeful', 'overbearing', 'closeted']
 // D column
-const protagonists = ['man', 'orphan', 'daughter', 'mother', 'adolescent', 'solder', 'student', 'widow', 'woman', 'professor', 'divorcee', 'adventurer', 'extended family', 'child', 'mistress', 'dictator', 'vampire', 'ghost', 'starship captain', 'doctor',
+const protag = ['man', 'orphan', 'daughter', 'mother', 'adolescent', 'solder', 'student', 'widow', 'woman', 'professor', 'divorcee', 'adventurer', 'extended family', 'child', 'mistress', 'dictator', 'vampire', 'ghost', 'starship captain', 'doctor',
   'writer', 'private investigator', 'couple', 'coven', 'murder detective', 'octogenarian']
 // E column
 const nouns = ['adventure', 'commitment', 'desire', 'devotion', 'dream', 'effort', 'strategy', 'pains', 'failure', 'inability', 'journey', 'mission', 'not-so-secret desire',
@@ -25,6 +25,6 @@ const possessions = ['fear of spiders', 'adoption', 'traumatic childhood', "moth
   'sexual awakening', 'Amazon reviews', "father's murder", 'disinheritance']
 
 // array of arrays: holding all words
-const novelDict = [adjectives, genres, protagonistAdjs, protagonists, nouns, verbs, possessions]
+const novelDict = [adj1, genres, adj2, protag, nouns, verbs, possessions]
 
 export default novelDict
