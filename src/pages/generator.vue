@@ -1,6 +1,5 @@
 <template>
   <div class="page-wrapper">
-    <p>Testing: {{$route.params.generatorid}}</p>
     <div class="page" :id="$route.params.generatorid">
       <div class="page-inner">
         <component v-bind:is="$route.params.generatorid"></component>
