@@ -1,11 +1,22 @@
 <template>
-    $END$
+  <div class="page-wrapper">
+    <p>Testing: {{$route.params.generatorid}}</p>
+    <div class="page" :id="$route.params.generatorid">
+      <div class="page-inner">
+        <component v-bind:is="$route.params.generatorid"></component>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "generator"
-    }
+import Vue from 'vue'
+import '../generators/generators'
+
+export default Vue.component('generator', {
+  name: 'app'
+})
+console.log('Generator')
 </script>
 
 <style scoped>
